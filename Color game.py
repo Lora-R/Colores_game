@@ -77,13 +77,13 @@ def enter_data(values_list):
     entry = Entry(tk, justify="center")
     # by clicking 'Enter' u switch the word/color/ and check if ur answer is correct
     tk.bind('<Return>',
-            lambda event, a=entry, b=values_list: color_change(a, b))
+            lambda event, e=entry, v=values_list: color_check(e, v))
 
     entry.grid(column=0, row=5, pady=20, padx=100)
     # holding the cursor into the empty entry box all the time
     entry.focus_set()
 
-def color_change(entry, values_list):
+def color_check(entry, values_list):
     global points
     global counter
 
