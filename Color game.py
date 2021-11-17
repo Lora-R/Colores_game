@@ -9,8 +9,6 @@ colours = {'Red': 'Rojo', 'Blue': 'Azul', 'Green': 'Verde', 'Pink': 'Rosa', 'Bla
            'Yellow': 'Amarillo', 'Orange': 'Naranja', 'White': 'Blanco', 'Purple': 'Purpura', 'Brown': 'Marron'}
 
 points = 0
-color_written = ""
-values_list = []
 
 def popup_points_end():
     global pop
